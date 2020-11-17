@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TweeterApp</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="registrate">Registrate</string>
+    <string name="title_activity_formulario_registro">FormularioRegistro</string>
+    <string name="action_settings">Settings</string>
+</resources>

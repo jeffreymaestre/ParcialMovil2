@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context=".PublicTwitter">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicar nuevo Twitter" />
+
+    <EditText
+        android:id="@+id/txtContentTwitter"
+        android:layout_width="311dp"
+        android:layout_height="324dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#2196F3"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#2196F3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnroundedtwtwhite"
+            android:text="Cancelar"
+            android:textColor="#2196F3"
+            android:textColorHighlight="#2196F3"
+            android:textColorLink="#2196F3"
+            android:onClick="goBack"/>
+
+        <Button
+            android:id="@+id/btnPublicarTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btnroundedtwt"
+            android:text="Publicar"
+            android:textColor="#FFFEFE"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            android:onClick="goPublication"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btnroundedtwtwhite"
+            android:text="BORRAR"
+            android:textColor="#2196F3"
+            android:visibility="gone"
+            android:onClick="goDelete"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btnroundedtwt"
+            android:text="Actualizar"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:onClick="goUpdate"/>
+    </LinearLayout>
+</LinearLayout>
